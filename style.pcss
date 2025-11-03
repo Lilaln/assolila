@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #F7F7F5;
+    color: #222;
+}
+header {
+    background: #EEE;
+    padding: 10px 0;
+    border-bottom: 1px solid #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #ddd; /* Pour intégration d'un vrai logo */
+}
+nav {
+    margin-top: 8px;
+}
+nav a {
+    color: #444;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 1.08em;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #745D4A;
+}
+
+/* Hero section */
+.hero {
+    background: #EAE7DF;
+    padding: 40px 20px 30px;
+    text-align: center;
+}
+.hero-content h2 {
+    font-size: 2.2em;
+    color: #574F46;
+    margin-bottom: 12px;
+}
+.hero-img {
+    margin-top: 22px;
+    border-radius: 16px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+/* About section */
+.about {
+    background: #F5F4F0;
+    padding: 32px 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.about h3 {
+    color: #745D4A;
+    margin-bottom: 12px;
+}
+.info-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    margin: 22px 0 0;
+    font-size: 1.08em;
+}
+.address { font-style: italic; color: #574F46; }
+
+/* Actions */
+.actions {
+    padding: 35px 20px;
+    text-align: center;
+}
+.actions h3 {
+    color: #574F46;
+}
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 20px 0 14px;
+}
+.cta {
+    background: #E1DED7;
+    color: #574F46;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.15em;
+    padding: 12px 22px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #ddd;
+    transition: background 0.2s, transform 0.2s;
+}
+.cta:hover {
+    background: #D0C8B5;
+    transform: scale(1.08);
+}
+.cta-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 17px 0 0 0;
+}
+.cta-img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #ccc;
+    opacity: 0.92;
+}
+.note {
+    color: #257A4A;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+/* Contact */
+.contact {
+    background: #F1EFE8;
+    padding: 30px 20px;
+    text-align: center;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+    font-size: 1.12em;
+}
+.contact-list li {
+    margin: 0 0 7px;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 8px;
+}
+.icon {
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.2s;
+}
+.icon:hover { opacity: 0.6; }
+
+/* Footer */
+footer {
+    background: #EEE;
+    color: #444;
+    text-align: center;
+    font-size: 1em;
+    padding: 14px 0;
+    margin-top: 26px;
+    border-top: 1px solid #DDD;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .info-block, .cta-container, .cta-imgs, .socials {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .cta-img { width: 90vw; max-width: 280px; height: 80px; }
+    nav a { font-size: 0.99em; }
+}
